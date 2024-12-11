@@ -45,15 +45,15 @@
   "devDependencies": {
     "eslint": "catalog:",
     "prettier": "catalog:",
-    "react": "catalog:react18",
-    "react-dom": "catalog:react18",
+    "react": "catalog:react19",
+    "react-dom": "catalog:react19",
     "typescript": "catalog:"
   },
   "peerDependencies": {
     "eslint": "catalog:",
     "prettier": ">=catalog:",
-    "react": ">=catalog:react18",
-    "react-dom": ">=catalog:react18",
+    "react": ">=catalog:react19",
+    "react-dom": ">=catalog:react19",
     "typescript": "catalog:"
   },
   "peerDependenciesMeta": {
