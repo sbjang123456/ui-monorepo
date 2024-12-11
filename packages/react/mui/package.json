@@ -1,0 +1,32 @@
+{
+  "name": "@sb/react-mui",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "description": "",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint . --max-warnings 0",
+    "check-types": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@sb/eslint-config": "workspace:*",
+    "@sb/typescript-config": "workspace:*",
+    "@types/node": "catalog:",
+    "@types/react": "catalog:react19",
+    "@types/react-dom": "catalog:react19",
+    "typescript": "catalog:"
+  },
+  "dependencies": {
+    "@emotion/react": "11.14.0",
+    "@emotion/styled": "11.14.0",
+    "@mui/material": "6.2.0",
+    "react": "catalog:react19",
+    "react-dom": "catalog:react19"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
