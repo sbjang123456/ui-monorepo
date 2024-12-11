@@ -1,7 +1,7 @@
 // @ts-check
 
-import { getEslintFixCmd } from '../../lint-staged.common.mjs';
-import baseConfig from '../../lint-staged.config.mjs';
+import { getEslintFixCmd } from '../../../lint-staged.common.mjs';
+import baseConfig from '../../../lint-staged.config.mjs';
 
 /**
  * @type {Record<string, (filenames: string[]) => string | string[] | Promise<string | string[]>>}
