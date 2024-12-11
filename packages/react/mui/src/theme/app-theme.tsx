@@ -1,13 +1,7 @@
-// import * as React from 'react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import type { ThemeOptions } from '@mui/material/styles';
 import { useMemo } from 'react';
-// import { inputsCustomizations } from './customizations/inputs';
-// import { dataDisplayCustomizations } from './customizations/dataDisplay';
-// import { feedbackCustomizations } from './customizations/feedback';
-// import { navigationCustomizations } from './customizations/navigation';
-// import { surfacesCustomizations } from './customizations/surfaces';
-// import { colorSchemes, typography, shadows, shape } from './themePrimitives';
+import { inputsCustomizations } from './customizations/inputs';
 
 type AppThemeProps = {
   children: React.ReactNode;
@@ -26,15 +20,17 @@ export function AppTheme(props: AppThemeProps) {
             cssVarPrefix: 'template',
           },
           //   colorSchemes, // Recently added in v6 for building light & dark mode app, see https://mui.com/material-ui/customization/palette/#color-schemes
-          //   typography,
-          //   shadows,
-          //   shape,
+          //   colorSchemes: {
+          //     light: {
+          //       palette: {
+          //         primary: {
+          //           main: '#000',
+          //         },
+          //       },
+          //     },
+          //   },
           components: {
-            // ...inputsCustomizations,
-            // ...dataDisplayCustomizations,
-            // ...feedbackCustomizations,
-            // ...navigationCustomizations,
-            // ...surfacesCustomizations,
+            ...inputsCustomizations,
             ...themeComponents,
           },
         });

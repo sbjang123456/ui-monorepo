@@ -10,6 +10,7 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
+    "@sb/react-mui": "workspace:*",
     "react": "catalog:react19",
     "react-dom": "catalog:react19"
   },

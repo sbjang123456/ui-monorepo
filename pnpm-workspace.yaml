@@ -1,6 +1,7 @@
 packages:
   - 'apps/*'
   - 'packages/*'
+  - 'packages/**/*'
 catalog:
   eslint: 9.16.0
   next: 15.1.0

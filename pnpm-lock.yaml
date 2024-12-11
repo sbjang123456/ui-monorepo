@@ -5,10 +5,35 @@ settings:
   excludeLinksFromLockfile: false
 
 catalogs:
+  '@commitlint':
+    '@commitlint/cli':
+      specifier: 19.6.0
+      version: 19.6.0
+    '@commitlint/config-conventional':
+      specifier: 19.6.0
+      version: 19.6.0
   default:
     '@types/node':
       specifier: 22.10.1
       version: 22.10.1
+    eslint:
+      specifier: 9.16.0
+      version: 9.16.0
+    husky:
+      specifier: 9.1.7
+      version: 9.1.7
+    lint-staged:
+      specifier: 15.2.11
+      version: 15.2.11
+    next:
+      specifier: 15.1.0
+      version: 15.1.0
+    prettier:
+      specifier: 3.4.2
+      version: 3.4.2
+    turbo:
+      specifier: 2.3.3
+      version: 2.3.3
     typescript:
       specifier: 5.7.2
       version: 5.7.2
@@ -90,6 +115,9 @@ importers:
 
   apps/storybook:
     dependencies:
+      '@sb/react-mui':
+        specifier: workspace:*
+        version: link:../../packages/react/mui
       react:
         specifier: catalog:react19
         version: 18.3.1
