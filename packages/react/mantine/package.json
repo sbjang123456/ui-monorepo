@@ -1,0 +1,33 @@
+{
+  "name": "@sb/react-mantine",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint . --max-warnings 0",
+    "check-types": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@sb/eslint-config": "workspace:*",
+    "@sb/typescript-config": "workspace:*",
+    "@types/node": "catalog:",
+    "@types/react": "catalog:react19",
+    "@types/react-dom": "catalog:react19",
+    "postcss": "8.4.49",
+    "postcss-preset-mantine": "1.17.0",
+    "postcss-simple-vars": "7.0.1",
+    "typescript": "catalog:"
+  },
+  "dependencies": {
+    "@mantine/core": "7.15.1",
+    "@mantine/hooks": "7.15.1",
+    "react": "catalog:react19",
+    "react-dom": "catalog:react19"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

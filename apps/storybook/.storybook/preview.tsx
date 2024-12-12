@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Preview } from '@storybook/react';
 import { AppTheme as MuiAppTheme } from '@sb/react-mui';
+import { AppTheme as MantineAppTheme } from '@sb/react-mantine';
 
 import '@sb/react-shadcn/styles.css';
 
@@ -24,8 +25,13 @@ const preview: Preview = {
         );
       }
 
-      // if (fileName?.includes('/shadcn/')) {
-      // }
+      if (fileName?.includes('/mantine/')) {
+        return (
+          <MantineAppTheme>
+            <Story />
+          </MantineAppTheme>
+        );
+      }
 
       // if (context.parameters.fileName?.includes('/antd/')) {
       //   return (

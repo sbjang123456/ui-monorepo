@@ -12,6 +12,7 @@
   "dependencies": {
     "@sb/react-mui": "workspace:*",
     "@sb/react-shadcn": "workspace:*",
+    "@sb/react-mantine": "workspace:*",
     "react": "catalog:react19",
     "react-dom": "catalog:react19"
   },
