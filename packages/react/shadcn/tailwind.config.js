@@ -1,7 +1,16 @@
+import tailwindcssAnimate from 'tailwindcss-animate';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ['class'],
-  content: ['./src/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    // './pages/**/*.{ts,tsx}',
+    // './components/**/*.{ts,tsx}',
+    // './apps/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
+    // '../../packages/ui/src/**/*.{ts,tsx}',
+    // '../../apps/**/*.{ts,tsx}',
+  ],
   theme: {
     extend: {
       borderRadius: {
@@ -53,5 +62,5 @@ export default {
       },
     },
   },
-  plugins: [import('tailwindcss-animate')],
+  plugins: [tailwindcssAnimate],
 };

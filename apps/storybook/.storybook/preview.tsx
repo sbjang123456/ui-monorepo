@@ -2,6 +2,8 @@ import React from 'react';
 import type { Preview } from '@storybook/react';
 import { AppTheme as MuiAppTheme } from '@sb/react-mui';
 
+import '@sb/react-shadcn/styles.css';
+
 const preview: Preview = {
   parameters: {
     controls: {
@@ -14,7 +16,6 @@ const preview: Preview = {
   decorators: [
     (Story, context) => {
       const fileName = context.parameters.fileName;
-
       if (fileName?.includes('/mui/')) {
         return (
           <MuiAppTheme>
@@ -22,6 +23,9 @@ const preview: Preview = {
           </MuiAppTheme>
         );
       }
+
+      // if (fileName?.includes('/shadcn/')) {
+      // }
 
       // if (context.parameters.fileName?.includes('/antd/')) {
       //   return (

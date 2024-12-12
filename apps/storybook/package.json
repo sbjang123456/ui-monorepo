@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@sb/react-mui": "workspace:*",
+    "@sb/react-shadcn": "workspace:*",
     "react": "catalog:react19",
     "react-dom": "catalog:react19"
   },
@@ -32,6 +33,7 @@
     "storybook": "^8.4.7",
     "storybook-addon-pseudo-states": "4.0.2",
     "typescript": "catalog:",
-    "vite": "^6.0.1"
+    "vite": "^6.0.1",
+    "vite-tsconfig-paths": "5.1.4"
   }
 }
