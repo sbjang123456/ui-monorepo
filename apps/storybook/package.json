@@ -10,9 +10,10 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
+    "@faker-js/faker": "9.3.0",
+    "@sb/react-mantine": "workspace:*",
     "@sb/react-mui": "workspace:*",
     "@sb/react-shadcn": "workspace:*",
-    "@sb/react-mantine": "workspace:*",
     "react": "catalog:react19",
     "react-dom": "catalog:react19"
   },
