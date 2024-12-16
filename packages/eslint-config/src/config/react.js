@@ -20,6 +20,13 @@ export const reactConfig = [
     },
   },
   {
+    files: ['**/components/ui/**/*.{ts,tsx,js,jsx}'],
+    rules: {
+      'react/prop-types': [2, { ignore: ['className', 'type'] }],
+    },
+  },
+
+  {
     files: ['**/*.{ts,tsx,js,jsx}'],
     plugins: {
       'react-hooks': pluginReactHooks,
